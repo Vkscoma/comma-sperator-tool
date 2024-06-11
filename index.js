@@ -5,10 +5,8 @@ const clearButton = document.querySelector('#clear');
 const copyButton = document.querySelector('#copy');
 
 submitButton.addEventListener('click', () => {
-    // validate input
     if (userInput.value.trim() === '') {
         alert('Please enter a value');
-        // now check that the input does not contain commas
     } else if (userInput.value.includes(',')) {
         alert('Please enter a value without commas');
     } else {
