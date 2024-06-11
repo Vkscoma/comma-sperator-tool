@@ -53,6 +53,7 @@ textarea::placeholder {
 }
 
 button {
+  font-size: 1rem;
   padding: 1em 2em;
   border: none;
   border-radius: 5px;
@@ -64,6 +65,22 @@ button {
 
 button:hover {
   background-color: #00a99d;
+}
+
+button#copy {
+  background-color: #009afa;
+}
+
+button#copy:hover {
+  background-color: #0079d3;
+}
+
+button#clear {
+  background-color: #ff3b30;
+}
+
+button#clear:hover {
+  background-color: #d93326;
 }
 
 .instructions--container {
