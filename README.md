@@ -1,2 +1,2 @@
 # comma-sperator-tool
-To create a tool that doesn't have any ads. 
+To create a tool that is simple and easy to use: https://vkscoma.github.io/comma-sperator-tool/ 
