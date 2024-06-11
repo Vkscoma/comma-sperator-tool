@@ -31,7 +31,7 @@ textarea {
   resize: none;
   outline: none;
   transition: all 250ms ease-in-out;
-  background-color: #6c7888;
+  background-color: rgba(108, 120, 136, 0.4);
 }
 
 textarea:focus {
@@ -86,10 +86,18 @@ button#clear:hover {
 .instructions--container {
   display: grid;
   place-content: center;
-  text-align: left;
   margin-top: 1.5em;
+  padding: 1em;
+  margin-bottom: 1em;
 }
 
-.instructions--container p {
-  margin-top: 0.5em;
+.instructions--container h2 {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.instructions--list {
+  list-style-type: disc;
+  padding: 0 1em;
+  margin: 0.5em 0;
 }
