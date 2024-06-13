@@ -67,6 +67,11 @@ button {
 
 button:hover {
   background-color: #00a99d;
+  box-shadow: 0 0 10px rgb(0 198 182 / 50%);
+}
+
+button:active {
+  transform: translateY(4px);
 }
 
 button#copy {
