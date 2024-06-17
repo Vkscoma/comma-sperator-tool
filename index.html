@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/png" href="./comma.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Comma Seperator Tool</title>
 </head>
 
@@ -26,15 +29,24 @@
             <button id="clear" class="btn">Clear</button>
         </section>
 
-        <section class="instructions--container">
-            <h2>Instructions</h2>
-            <ol class="instructions--list">
-                <li>Enter the excel column into the input field.</li>
-                <li>Click the submit button to get comma seperated results.</li>
-                <li>Click the copy button to copy the result.</li>
-                <li>Click the clear button to clear all fields.</li>
-            </ol>
+        <section class="instructions--open--button">
+            <span id="open--modal">
+                <i class="fa-solid fa-circle-info fa-gradient"></i>
+            </span>
         </section>
+
+        <dialog class="instructions--container modal">
+            <div class="modal--container">
+                <h2>Instructions</h2>
+                <ol class="instructions--list">
+                    <li>Enter the excel column into the input field.</li>
+                    <li>Click the submit button to get comma seperated results.</li>
+                    <li>Click the copy button to copy the result.</li>
+                    <li>Click the clear button to clear all fields.</li>
+                </ol>
+                <button id="close--modal" class="btn">Close</button>
+            </div>
+        </dialog>
     </main>
     <script src="./index.js"></script>
 </body>

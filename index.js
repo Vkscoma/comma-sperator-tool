@@ -3,6 +3,20 @@ const results = document.querySelector('#result');
 const submitButton = document.querySelector('#submit');
 const clearButton = document.querySelector('#clear');
 const copyButton = document.querySelector('#copy');
+const openModal = document.querySelector('#open--modal');
+const closeModal = document.querySelector('#close--modal');
+const modal = document.querySelector('.modal');
+
+
+openModal.addEventListener('click', () => {
+    if (!modal.attributes[1]) {
+        modal.showModal();
+    }
+});
+
+closeModal.addEventListener('click', () => {
+    modal.close();
+});
 
 submitButton.addEventListener('click', () => {
     if (userInput.value.trim() === '') {

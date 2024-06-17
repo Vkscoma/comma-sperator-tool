@@ -90,12 +90,79 @@ button#clear:hover {
   background-color: #d93326;
 }
 
+#open--modal {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+
+#open--modal:hover {
+  transform: scale(1.1);
+}
+
+.fa-gradient {
+  background-image: linear-gradient(
+    to right top,
+    #f781c4,
+    #e88dd9,
+    #d69ae9,
+    #c2a5f5,
+    #aeb0fc,
+    #97bbff,
+    #83c5ff,
+    #75ceff,
+    #62daff,
+    #53e6ff,
+    #51f1fb,
+    #5ffbf1
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+#close--modal {
+  margin: 0 auto;
+}
+
+.instructions--open--button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+
 .instructions--container {
-  display: grid;
-  place-content: center;
-  margin-top: 1.5em;
   padding: 1em;
-  margin-bottom: 1em;
+  margin: 10em auto;
+  border-radius: 5px;
+  transition: all 250ms ease-in-out;
+}
+
+.instructions--container::backdrop {
+  background-image: linear-gradient(
+    to right top,
+    #ec89c2,
+    #d27fc3,
+    #b577c2,
+    #9570be,
+    #7169b9,
+    #586fbd,
+    #3a74bd,
+    #0078bb,
+    #0088be,
+    #0097ba,
+    #00a4b2,
+    #2fb0a8
+  );
+  opacity: 0.7;
+}
+
+.modal--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .instructions--container h2 {
@@ -131,8 +198,7 @@ button#clear:hover {
   }
 
   .instructions--container {
-    padding: 0.5em;
-    margin-top: 3em;
+    margin: 15em auto;
   }
 
   .instructions--container h2 {
