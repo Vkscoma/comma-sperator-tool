@@ -38,6 +38,8 @@ copyButton.addEventListener('click', copyResults);
 function addCommasToInput() {
     const input = userInput.value.trim();
     const outputResult = input.split(/\s+/).join(', ');
+    // make the output results in a new line format
+    outputResult.replace(/,/g, ',\n');
     results.value = outputResult;
 }
 
