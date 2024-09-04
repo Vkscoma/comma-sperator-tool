@@ -61,18 +61,12 @@ const addPrefixAndSuffix = () => {
         alert('There is nothing to format');
         return;
     }
-
-    const items = input.split(',').map(item => item.trim()); // Split by commas and trim each item
+    const items = input.split(',').map(item => item.trim());
     const prefix = "'";
     const suffix = "'";
-
-    // Add prefix and suffix to each item
     const formattedItems = items.map(item => `${prefix}${item}${suffix}`);
-
-    // Join with commas and a space
     const outputResult = formattedItems.join(', ');
     results.value = outputResult;
 }
 
-// Event listener for prefix/suffix button
 prefixAndSuffix.addEventListener('click', addPrefixAndSuffix);
