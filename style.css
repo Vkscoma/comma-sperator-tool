@@ -90,6 +90,14 @@ button#clear:hover {
   background-color: #d93326;
 }
 
+button#prefix--suffix {
+  background-color: #ff9500;
+}
+
+button#prefix--suffix:hover {
+  background-color: #e67e00;
+}
+
 #open--modal {
   font-size: 2rem;
   cursor: pointer;

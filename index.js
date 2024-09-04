@@ -6,6 +6,7 @@ const copyButton = document.querySelector('#copy');
 const openModal = document.querySelector('#open--modal');
 const closeModal = document.querySelector('#close--modal');
 const modal = document.querySelector('.modal');
+const prefixAndSuffix = document.querySelector('#prefix--suffix');
 
 
 openModal.addEventListener('click', () => {
@@ -53,3 +54,25 @@ function copyResults() {
         alert('There is nothing to copy');
     }
 }
+
+const addPrefixAndSuffix = () => {
+    const input = results.value.trim();
+    if (input === '') {
+        alert('There is nothing to format');
+        return;
+    }
+
+    const items = input.split(',').map(item => item.trim()); // Split by commas and trim each item
+    const prefix = "'";
+    const suffix = "'";
+
+    // Add prefix and suffix to each item
+    const formattedItems = items.map(item => `${prefix}${item}${suffix}`);
+
+    // Join with commas and a space
+    const outputResult = formattedItems.join(', ');
+    results.value = outputResult;
+}
+
+// Event listener for prefix/suffix button
+prefixAndSuffix.addEventListener('click', addPrefixAndSuffix);
