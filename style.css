@@ -10,9 +10,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #1e1b39;
   color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
   align-items: center;
   height: 100vh;
   margin: 0;
@@ -56,7 +54,7 @@ textarea::placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1em;
+  margin-top: 2em;
   gap: 1em;
 }
 
